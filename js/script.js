@@ -15,7 +15,7 @@ elForm.addEventListener("submit", function(evt) {
 
    if (elTemp.value === EMPT) {
      elResult.textContent = "Please, enter number";
-   } else if (elTemp.value < MIN_TEMP && privillage) {
+   } else if (elTemp.value < MIN_TEMP || privillage) {
         elResult.textContent = "You can not run";
     } else if (elTemp.value > MAX_TEMP || privillage) {
         elResult.textContent = "You can not run";
